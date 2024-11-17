@@ -1,0 +1,143 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://t7k1mgv6aqy2"]
+
+[ext_resource type="FontFile" uid="uid://dvv6cm3tnxbso" path="res://Fonts/观致 8×8 像素字体.ttf" id="1_mybi5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_goubn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_noi2t"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qpr01"]
+bg_color = Color(0.950703, 0.950703, 0.950703, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00ut5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j66m4"]
+bg_color = Color(0.968257, 0.968257, 0.968257, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8w7e5"]
+bg_color = Color(0, 0, 0, 0.721569)
+border_width_left = 4
+border_width_top = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pu6a6"]
+bg_color = Color(0.968257, 0.968257, 0.968257, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.60933, 0.60933, 0.60933, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acfiy"]
+bg_color = Color(0.968257, 0.968257, 0.968257, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d32g3"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 4
+border_width_top = 35
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_top = 35.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[resource]
+Button/colors/font_color = Color(0.0295067, 0.0295065, 0.0295065, 1)
+Button/colors/font_focus_color = Color(0.985869, 0.985869, 0.985869, 1)
+Button/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0.500619, 0.50062, 0.50062, 1)
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_mybi5")
+Button/styles/focus = SubResource("StyleBoxFlat_goubn")
+Button/styles/hover = SubResource("StyleBoxFlat_goubn")
+Button/styles/hover_pressed = SubResource("StyleBoxFlat_noi2t")
+Button/styles/normal = SubResource("StyleBoxFlat_qpr01")
+Button/styles/pressed = SubResource("StyleBoxFlat_00ut5")
+HScrollBar/styles/grabber = SubResource("StyleBoxFlat_j66m4")
+HScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_j66m4")
+HScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_j66m4")
+HScrollBar/styles/scroll = SubResource("StyleBoxFlat_8w7e5")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_mybi5")
+LineEdit/colors/caret_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/font_sizes/font_size = 24
+LineEdit/fonts/font = ExtResource("1_mybi5")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_pu6a6")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_acfiy")
+OptionButton/colors/font_color = Color(0, 0, 0, 1)
+OptionButton/fonts/font = ExtResource("1_mybi5")
+PopupMenu/colors/font_color = Color(0, 0, 0, 1)
+PopupMenu/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 1)
+PopupMenu/colors/font_separator_color = Color(0, 0, 0, 1)
+PopupMenu/font_sizes/font_size = 24
+PopupMenu/fonts/font = ExtResource("1_mybi5")
+PopupMenu/fonts/font_separator = ExtResource("1_mybi5")
+PopupMenu/fonts/title_font = ExtResource("1_mybi5")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_acfiy")
+TextEdit/colors/caret_color = Color(0, 0, 0, 1)
+TextEdit/colors/font_color = Color(0, 0, 0, 1)
+TextEdit/font_sizes/font_size = 24
+TextEdit/fonts/font = ExtResource("1_mybi5")
+TextEdit/styles/focus = SubResource("StyleBoxFlat_pu6a6")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_acfiy")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_j66m4")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_j66m4")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_j66m4")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_8w7e5")
+Window/fonts/title_font = ExtResource("1_mybi5")
+Window/styles/embedded_border = SubResource("StyleBoxFlat_d32g3")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxFlat_d32g3")

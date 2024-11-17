@@ -1,0 +1,156 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqbxgodbag81y"]
+
+[ext_resource type="Theme" uid="uid://t7k1mgv6aqy2" path="res://Themes/Minimal.tres" id="1_i2jgd"]
+[ext_resource type="Script" path="res://Scripts/MainUi.cs" id="2_dadjg"]
+
+[node name="MainUi" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_i2jgd")
+script = ExtResource("2_dadjg")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+border_color = Color(0, 0, 0, 1)
+border_width = 4.0
+editor_only = false
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 339.0
+offset_bottom = 52.0
+text = "OLLAMA 扩写"
+
+[node name="History" type="TextEdit" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 56.0
+offset_right = 872.0
+offset_bottom = 592.0
+text = "Instruction: Generate text based on a given chat history."
+wrap_mode = 1
+
+[node name="Input" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 596.0
+offset_right = 736.0
+offset_bottom = 638.0
+
+[node name="ApiUri" type="TextEdit" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 876.0
+offset_top = 56.0
+offset_right = 1148.0
+offset_bottom = 89.0
+text = "http://127.0.0.1:11434/"
+
+[node name="ButtonApplyApiUri" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 880.0
+offset_top = 96.0
+offset_right = 1144.0
+offset_bottom = 137.0
+text = "应用 API 地址"
+
+[node name="ButtonGenerate" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 812.0
+offset_top = 600.0
+offset_right = 868.0
+offset_bottom = 633.0
+text = "生成"
+
+[node name="ButtonSend" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 744.0
+offset_top = 600.0
+offset_right = 800.0
+offset_bottom = 633.0
+text = "发送"
+
+[node name="SelectedModel" type="TextEdit" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 960.0
+offset_top = 311.0
+offset_right = 1148.0
+offset_bottom = 344.0
+text = "glm4"
+
+[node name="InjectInput" type="TextEdit" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 876.0
+offset_top = 184.0
+offset_right = 1148.0
+offset_bottom = 225.0
+text = "Input: "
+
+[node name="InjectInputTip" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 876.0
+offset_top = 152.0
+offset_right = 1116.0
+offset_bottom = 185.0
+text = "输入前注入:"
+
+[node name="InjectResponseTip" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 876.0
+offset_top = 232.0
+offset_right = 1093.0
+offset_bottom = 265.0
+text = "回复前注入:"
+
+[node name="InjectResponse" type="TextEdit" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 876.0
+offset_top = 265.0
+offset_right = 1148.0
+offset_bottom = 306.0
+text = "Response: "
+
+[node name="SelectedModelTip" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 880.0
+offset_top = 312.0
+offset_right = 944.0
+offset_bottom = 345.0
+text = "模型:"
+
+[connection signal="pressed" from="ButtonApplyApiUri" to="." method="_on_button_apply_api_uri_pressed"]
+[connection signal="pressed" from="ButtonGenerate" to="." method="_on_button_generate_pressed"]
+[connection signal="pressed" from="ButtonSend" to="." method="_on_button_send_pressed"]
+[connection signal="text_changed" from="SelectedModel" to="." method="_on_selected_model_text_changed"]
